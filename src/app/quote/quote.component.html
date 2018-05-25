@@ -1,0 +1,32 @@
+<div class="jumbotron">
+<h1>Quotes</h1>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-lg-6">
+      <div class="container">
+        <div class="row">
+          <app-quote-form (addGoal)="addNewGoal($event)"></app-quote-form>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-6 col-lg-6">
+      <div class="container">
+        <div class="row" *ngFor='let quote of quotes;let i = index'>
+          <div class="row">
+            <h4 id="{{i}}">{{quote.description}}</h4>
+            <p>author ~ {{quote.name}}</p>
+            <p  id="{{i}}"> {{quote.completeDate|dateCount}} days ago</p>
+            <button  (click)='toggleDetails(i)'>More Details</button>
+          </div>
+            <div class="row" *ngIf="quote.showDescription">
+                <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)')></app-quote-details>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
