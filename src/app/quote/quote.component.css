@@ -1,0 +1,19 @@
+div#main.container{
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888
+}
+button.btn.btn-primary{
+  margin: 0 auto;
+}
+div.moredetails{
+  padding-bottom: 20px;
+  /* text-align: center; */
+}
+p#quotedescription{
+  font-size: 24px;
+}
+p#author{
+  font-size: 16px;
+  color: #6c757d;
+
+}
