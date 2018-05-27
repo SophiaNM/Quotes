@@ -9,9 +9,10 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1,'Sophia Murage','Theorem of Self-Awareness. This referes to the ability to be self aware','Budhaa', new Date(2018,3,14),0,0),
-    new Quote(2,'Mark Taiwin','Philosophy in Relativity. Readon relativity','Socrates',new Date(2018,3,15),0,0),
-    new Quote(3,'Edith Markal', 'Meaning of Life Read on meaning of life beiing 42','Plato',new Date(2018,3,16),0,0)
+    new Quote(1,'Sophia Murage','Whereof one cannot speak, thereof one must be silent','Ludwig Wittgenstein', new Date(2018,3,14),0,0),
+    new Quote(2,'Mark Taiwin','The only thing I know is that I know nothing','Socrates',new Date(2018,3,15),0,0),
+    new Quote(3,'Emilia Markal', 'You can discover more about a person in an hour of play than in a year of conversation','Plato',new Date(2018,3,16),0,0)
+    new Quote(4,'John Momoa', 'That man is wisest who, like Socrates, realizes that his wisdom is worthless','Plato',new Date(2018,3,24),0,0)
   ];
 
   deleteQuote(isComplete,index){

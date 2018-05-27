@@ -1,12 +1,14 @@
+<div class="wrapper">
 
-<div class="jumbotron">
+<div>
 <h1>Quotes</h1>
+<hr width=30%>
 </div>
 <div class="container" id="main">
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-md-6 col-lg-6">
+      <div class="col-md-6 col-lg-6 form">
         <div class="container">
           <div class="row">
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
@@ -18,7 +20,7 @@
         <div class="container">
           <div class="row" *ngFor="let quote of quotes;let i = 'index'">
               <div >
-                  <p id="quotedescription" id="{{i}}" appHighlight>{{quote.description}}</p>
+                  <p id="quotedescription" id="{{i}}">{{quote.description}}</p>
                   <p id="author">~ Author is {{quote.author}} | Submitted {{quote.completeDate|dateCount}} days ago</p>
 
                   <div class="moredetails">
@@ -38,5 +40,7 @@
 
     </div>
   </div>
+
+</div>
 
 </div>
