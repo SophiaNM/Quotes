@@ -19,7 +19,8 @@
           <div class="row" *ngFor="let quote of quotes;let i = 'index'">
               <div >
                   <p id="quotedescription">{{quote.description}}</p>
-                  <p id="author">~ Author is {{quote.name}} | Submitted {{quote.completeDate|dateCount}} days ago</p>
+                  <p id="author">~ Author is {{quote.author}} | Submitted {{quote.completeDate|dateCount}} days ago</p>
+
                   <div class="moredetails">
                     <button class="btn btn-primary" (click)='toggleDetails(i)'>View More</button>
                   </div>

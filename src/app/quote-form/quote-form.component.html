@@ -4,7 +4,7 @@
 
           <!-- Name Form -->
             <div class="form-group">
-                <label for="name">Author's Name</label>
+                <label for="name">Name</label>
                 <input type="text"  class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required>
 
                 <!-- <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
@@ -18,6 +18,14 @@
                 <!-- <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
                     <p> Description is Required</p>
                 </div> -->
+              </div>
+              <div class="form-group">
+                  <label for="author">Author's Name</label>
+                  <input type="text"  class="form-control" id="author" [(ngModel)]="newQuote.author" name="author" #name="ngModel" required>
+
+                  <!-- <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+                      <p> Name is Required</p>
+                  </div> -->
               </div>
                 <!-- Date Input -->
               <div class="form-group">

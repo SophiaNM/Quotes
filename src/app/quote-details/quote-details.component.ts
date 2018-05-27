@@ -15,6 +15,19 @@ export class QuoteDetailsComponent implements OnInit {
     this.isComplete.emit(complete);
   }
 
+
+  submitUpvote(quote){
+    quote.upvote=quote.upvote+1;
+    // alert('it works');
+  }
+
+  submitDownvote(quote){
+    quote.downvote=quote.downvote+1;
+  }
+
+
+
+
   constructor() { }
 
   ngOnInit() {

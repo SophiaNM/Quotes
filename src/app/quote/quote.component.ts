@@ -9,9 +9,9 @@ import {Quote} from '../quote'
 export class QuoteComponent implements OnInit {
 
   quotes = [
-    new Quote(1,'Budhaa','Theorem of Self-Awareness. This referes to the ability to be self aware', new Date(2018,3,14)),
-    new Quote(2,'Socrates','Philosophy in Relativity. Readon relativity',new Date(2018,3,15)),
-    new Quote(3,'PLato', 'Meaning of Life Read on meaning of life beiing 42',new Date(2018,3,16))
+    new Quote(1,'Sophia Murage','Theorem of Self-Awareness. This referes to the ability to be self aware','Budhaa', new Date(2018,3,14),0,0),
+    new Quote(2,'Mark Taiwin','Philosophy in Relativity. Readon relativity','Socrates',new Date(2018,3,15),0,0),
+    new Quote(3,'Edith Markal', 'Meaning of Life Read on meaning of life beiing 42','Plato',new Date(2018,3,16),0,0)
   ];
 
   deleteQuote(isComplete,index){
@@ -28,6 +28,7 @@ export class QuoteComponent implements OnInit {
       this.quotes[index].showDescription = !this.quotes[index].showDescription;
       // alert("this works");
   }
+
 
   addNewQuote(quote){
       let quoteLength = this.quotes.length;

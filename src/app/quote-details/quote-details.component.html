@@ -1,4 +1,10 @@
 <div class="container">
-  <p>likes dislike</p>
+  <p>
+    Submitted by {{quote.name}}
+    <button type="button" class="btn btn-default btn-sm" (click)=submitUpvote(quote)><span class="glyphicon glyphicon-thumbs-up"></span> upvote </button>
+    <span class="vote">{{quote.upvote}}</span>
+    <button type="button" class="btn btn-default btn-sm" (click)=submitDownvote(quote)><span class="glyphicon glyphicon-thumbs-down"></span> downvote </button>
+    <span class="vote">{{quote.downvote}}</span>
+  </p>
   <button class="btn btn-danger" (click) = 'quoteDelete(true)'> Delete this quote </button>
 </div>
