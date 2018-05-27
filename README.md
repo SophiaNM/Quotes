@@ -21,10 +21,10 @@ The Quotes Angular application allows users to create quotes and have those quot
 
 | Behaviour | Input | Output |
 | --------- | ------| ------ |
-| Create New Quote | Name, Quote, Author, Date| Displays Quote Name,Author and days passed and more details|
-| Upvote | Click Upvote button | Increased number of upvotes|
-| Downvote |Click Downvote button |  Increased number of downvotes|
-| Delete a quote | Click `more details` Click `delete quote`| Quote is deleted | 
+| Create new quote | Name, Quote, Author, Date| Displays quote, name, author, days passed and more details|
+| Upvote | Click `more details` then click `upvote` button | Increased number of upvotes|
+| Downvote |Click `more details` then click `downvote` button |  Increased number of downvotes|
+| Delete a quote | Click `more details` then click `delete quote`| Quote is deleted |
 
 ## Known Bugs
 
