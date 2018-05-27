@@ -18,7 +18,7 @@
         <div class="container">
           <div class="row" *ngFor="let quote of quotes;let i = 'index'">
               <div >
-                  <p id="quotedescription">{{quote.description}}</p>
+                  <p id="quotedescription" id="{{i}}" appHighlight>{{quote.description}}</p>
                   <p id="author">~ Author is {{quote.author}} | Submitted {{quote.completeDate|dateCount}} days ago</p>
 
                   <div class="moredetails">

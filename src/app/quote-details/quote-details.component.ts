@@ -18,6 +18,7 @@ export class QuoteDetailsComponent implements OnInit {
 
   submitUpvote(quote){
     quote.upvote=quote.upvote+1;
+
     // alert('it works');
   }
 
