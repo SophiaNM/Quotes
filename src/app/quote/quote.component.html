@@ -4,43 +4,58 @@
 <h1>Quotes</h1>
 <hr width=30%>
 </div>
-<div class="container" id="main">
+<div id="main">
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-md-6 col-lg-6 form">
+      <div class="col-md-12 form">
         <div class="container">
           <div class="row">
             <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
           </div>
         </div>
       </div>
-
-      <div class="col-md-6 col-lg-6 quotes">
-        <div class="container">
-          <div class="row" *ngFor="let quote of quotes;let i = 'index'">
-              <div >
-                  <p id="quotedescription" id="{{i}}">{{quote.description}}</p>
-                  <p id="author">~ Author is {{quote.author}} | Submitted {{quote.completeDate|dateCount}} days ago</p>
-
-                  <div class="moredetails">
-                    <button class="btn btn-primary" (click)='toggleDetails(i)'>View More</button>
-                  </div>
-              </div>
-
-              <div class="row" *ngIf="quote.showDescription">
-              <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
-
     </div>
   </div>
 
 </div>
+<div id="quotesection">
+<div class="container-fluid">
+  <div class="row">
+
+
+        <div class="col-sm-6 col-md-4 col-lg-4 quotes" *ngFor="let quote of quotes;let i = 'index'">
+          <div class="card">
+            <div class="card-header" >
+                <p id="quotedescription" id="{{i}}">{{quote.description}}</p>
+
+            </div>
+                <div class="card-body">
+                  <p id="author">~ Author is {{quote.author}} </p>
+                  <p id="days"> Submitted {{quote.completeDate|dateCount}} hours ago</p>
+                  <div class="moredetails">
+                    <button class="btn btn-primary" (click)='toggleDetails(i)'>View More</button>
+                  </div>
+                  <div class="row" *ngIf="quote.showDescription">
+                  <app-quote-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quote-details>
+                </div>
+                </div>
+          </div>
+
+
+
+
+
+        </div>
+
+
+  </div>
+
+</div>
+</div>
+
+
+
+
 
 </div>

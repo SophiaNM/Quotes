@@ -1,10 +1,24 @@
 
-div#main.container{
-    padding: 10px;
+div#main{
+  margin: 20px;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+div#quotesection{
+  margin: 10px;
+}
 
+app-quote-form{
+  width: 100%;
+}
+
+div.card{
+  min-height: 300px;
+}
+div.col-sm-6.col-md-4.col-lg-4.quotes{
+  padding: 10px;
+}
 div.wrapper{
   background: url(../../assets/image1.jpg) fixed;
   background-size: cover;
@@ -15,7 +29,7 @@ div.wrapper{
 }
 h1{
   text-align: center;
-  margin: 0px 50px 0px 0px;
+  margin: 0px 40px 0px 0px;
   padding-top: 30px;
 }
 hr{
@@ -32,10 +46,14 @@ p#quotedescription{
   font-size: 26px;
 }
 p#author{
+  font-size: 16px;
+  color: #212529d6;
+}
+p#days{
   font-size: 14px;
   color: #212529d6;
-
 }
+
 div.col-md-6.col-lg-6.form,div.col-md-6.col-lg-6.quotes {
   padding: 20px;
   margin-bottom: 30px;
