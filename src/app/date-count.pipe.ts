@@ -16,6 +16,7 @@ export class DateCountPipe implements PipeTransform {
     var dateCounter = dateDifferenceSeconds/secondsInAnHour;
     var dateCounter = dateCounter.toFixed(0);
 
+
     if (dateCounter >= 1){
         return dateCounter;
     }else{
