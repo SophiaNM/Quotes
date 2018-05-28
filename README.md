@@ -1,6 +1,6 @@
 # Quotes Independent Project
 
-This is the first Independent project for Moringa Core week 1.
+This is the first Independent project for Moringa Core, May 25th, 2018.
 The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
 
@@ -27,7 +27,6 @@ The Quotes Angular application allows users to create quotes and have those quot
 | Delete a quote | Click `more details` then click `delete quote`| Quote is deleted |
 
 ## Known Bugs
-
 Date Count Custom Pipe does not display correct count with a Null date input.
 
 
@@ -35,7 +34,7 @@ Date Count Custom Pipe does not display correct count with a Null date input.
 View the complete site [here](https://sophianm.github.io/selfassessment3/)
 
 ## Technologies Used
-It is built using Angular JS, HTML, Bootstrap
+It is built using Angular JS, HTML, Bootstrap.
 
 ## Contributors
  - Sophia Murage
