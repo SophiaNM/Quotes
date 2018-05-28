@@ -33,10 +33,10 @@ p#quotedescription{
 }
 p#author{
   font-size: 14px;
-  color: #6c757d;
+  color: #212529d6;
 
 }
-div.col-md-6.col-lg-6.form {
+div.col-md-6.col-lg-6.form,div.col-md-6.col-lg-6.quotes {
   padding: 20px;
   margin-bottom: 30px;
 }
