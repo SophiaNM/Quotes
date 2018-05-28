@@ -26,13 +26,12 @@
 
         <div class="col-sm-6 col-md-4 col-lg-4 quotes" *ngFor="let quote of quotes;let i = 'index'">
           <div class="card">
-            <div class="card-header" >
+            <div class="card-body" >
                 <p id="quotedescription" id="{{i}}">{{quote.description}}</p>
 
             </div>
-                <div class="card-body">
-                  <p id="author">~ Author is {{quote.author}} </p>
-                  <p id="days"> Submitted {{quote.completeDate|dateCount}} hours ago</p>
+                <div class="card-footer">
+                  <p id="author">~ Author {{quote.author}} | Submitted {{quote.completeDate|dateCount}} hours ago</p>
                   <div class="moredetails">
                     <button class="btn btn-primary" (click)='toggleDetails(i)'>View More</button>
                   </div>

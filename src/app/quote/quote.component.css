@@ -14,7 +14,7 @@ app-quote-form{
 }
 
 div.card{
-  min-height: 300px;
+  min-height: 250px;
 }
 div.col-sm-6.col-md-4.col-lg-4.quotes{
   padding: 10px;
@@ -46,7 +46,7 @@ p#quotedescription{
   font-size: 26px;
 }
 p#author{
-  font-size: 16px;
+  font-size: 14px;
   color: #212529d6;
 }
 p#days{

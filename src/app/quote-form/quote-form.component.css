@@ -10,8 +10,8 @@ form{
 div.col-lg-6.col-md-6{
   margin: 0px;
 }
-div.form-group#formdate{
-
+div.form-group.submit{
+  margin-top: 48px;
 }
 button#addQuote{
   margin: 0 auto;

@@ -18,8 +18,8 @@ export class QuoteDetailsComponent implements OnInit {
 
   submitUpvote(quote){
     quote.upvote=quote.upvote+1;
-    if(quote.upvote>maxCount) maxCount=quote.upvote;
-    else if (quote.upvote<=maxCount) console.log(maxCount);
+    // if(quote.upvote>maxCount) maxCount=quote.upvote;
+    // else if (quote.upvote<=maxCount) console.log(maxCount);
 
 
     // alert('it works');
