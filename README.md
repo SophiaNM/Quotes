@@ -27,7 +27,7 @@ The Quotes Angular application allows users to create quotes and have those quot
 | Delete a quote | Click `more details` then click `delete quote`| Quote is deleted |
 
 ## Known Bugs
-Date Count Custom Pipe does not display correct count with a Null date input.
+The highest number of votes does not highlight.
 
 
 ## Live Website
