@@ -31,7 +31,7 @@ The highest number of votes does not highlight.
 
 
 ## Live Website
-View the complete site [here](https://sophianm.github.io/selfassessment3/)
+View the complete site [here](https://SophiaNM.github.io/Quotes/Quotes/)
 
 ## Technologies Used
 It is built using Angular JS, HTML, Bootstrap.
