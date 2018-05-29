@@ -31,9 +31,25 @@ h1{
   text-align: center;
   margin: 0px 40px 0px 0px;
   padding-top: 30px;
+  font-family: 'Tangerine', cursive;
+  font-style: italic;
+  font-size: 115px;
 }
 hr{
   padding: 10px;
+}
+
+/* .quotemark{
+  font-weight: bold;
+  font-size: 30px;
+  font-style: italic;
+  font-family: 'Tangerine', cursive;
+} */
+
+p.quotedescription{
+  font-family: 'Tangerine', cursive;
+  font-style: italic;
+  font-size: 36px;
 }
 button.btn.btn-primary{
   margin: 0 auto;
